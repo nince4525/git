@@ -1,0 +1,35 @@
+{
+    "home": "08-search",
+    "chapter": "第八章 查找",
+    "defaulttype": [],
+    "defaultexec": "search",
+    "section": {
+        "main": {
+            "title": "主程序",
+            "category": "infrastructure|hidden"
+        },
+        "list-based": {
+            "title": "8.2.1 基于线性表的查找--顺序查找法",
+            "category": "infrastructure|hidden"
+        },
+        "tree-based": {
+            "title": "8.3.1 基于树的查找法",
+            "category": "infrastructure|hidden"
+        },
+        "hash": {
+            "title": "8.4 计算式查找法--哈希法",
+            "category": "infrastructure|hidden"
+        },
+        "benchmark": {
+            "title": "测试程序",
+            "category": "infrastructure",
+            "dependency": {
+                "default": [
+                    "search/list-based",
+                    "search/tree-based",
+                    "search/hash"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "home": "04-string",
+    "chapter": "第四章 串",
+    "defaulttype": [
+        "typedef char CHAR;"
+    ],
+    "defaultexec": "string",
+    "section": {
+        "main": {
+            "title": "主程序",
+            "category": "infrastructure|hidden"
+        },
+        "seqstring": {
+            "title": "4.2.1 定长顺序串（含Brute-Force算法）",
+            "category": "infrastructure",
+            "dependency": {
+                "BF": [
+                    "string/BF"
+                ],
+                "KMP": [
+                    "string/KMP"
+                ]
+            }
+        },
+        "heapstring": {
+            "title": "4.2.2 堆串",
+            "category": "infrastructure"
+        },
+        "blstring": {
+            "title": "4.2.3 块链串",
+            "category": "infrastructure",
+            "elemtype": [
+                "#define BLOCK_SIZE  4",
+                "typedef struct { char ch[BLOCK_SIZE]; } ElemType;"
+            ],
+            "dependency": {
+                "default": [
+                    "list/linklistxp"
+                ]
+            }
+        },
+        "BF": {
+            "title": "4.2.1.2 BF算法",
+            "category": "infrastructure|hidden"
+        },
+        "KMP": {
+            "title": "4.2.1.3 KMP算法",
+            "category": "infrastructure|hidden"
+        }
+    }
+}

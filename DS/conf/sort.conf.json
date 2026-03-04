@@ -1,0 +1,45 @@
+{
+    "home": "09-sort",
+    "chapter": "第九章 排序",
+    "defaulttype": [],
+    "defaultexec": "sort",
+    "section": {
+        "main": {
+            "title": "主程序",
+            "category": "infrastructure|hidden"
+        },
+        "insertion": {
+            "title": "9.2 插入类排序--直接插入、折半、希尔排序",
+            "category": "infrastructure|hidden"
+        },
+        "swap": {
+            "title": "9.3 交换类排序--冒泡、快速排序",
+            "category": "infrastructure|hidden"
+        },
+        "selection": {
+            "title": "9.4 选择类排序--简单选择、堆排序",
+            "category": "infrastructure|hidden"
+        },
+        "merge": {
+            "title": "9.5 归并排序",
+            "category": "infrastructure|hidden"
+        },
+        "distribution": {
+            "title": "9.6 分配类排序--链式基数排序",
+            "category": "infrastructure|hidden"
+        },
+        "benchmark": {
+            "title": "测试程序",
+            "category": "infrastructure",
+            "dependency": {
+                "default": [
+                    "sort/insertion",
+                    "sort/swap",
+                    "sort/selection",
+                    "sort/merge",
+                    "sort/distribution"
+                ]
+            }
+        }
+    }
+}

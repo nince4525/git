@@ -1,0 +1,55 @@
+{
+    "home": "02-linearlist",
+    "chapter": "第二章 线性表",
+    "defaulttype": [
+        "typedef int ElemType;"
+    ],
+    "defaultexec": "list",
+    "section": {
+        "main": {
+            "title": "主程序",
+            "category": "infrastructure|hidden"
+        },
+        "seqlist": {
+            "title": "2.2 顺序表 使用数组作为存储结构",
+            "category": "infrastructure"
+        },
+        "linklist": {
+            "title": "2.3.1 单链表 使用头指针的单链表",
+            "category": "infrastructure"
+        },
+        "clinklist": {
+            "title": "2.3.3 循环链表 使用头指针的循环链表",
+            "category": "infrastructure"
+        },
+        "dlinklist": {
+            "title": "2.3.4 双向链表 使用头指针的双向链表",
+            "category": "infrastructure"
+        },
+        "linklistx": {
+            "title": "2.3.1 增强的单链表 封装了头结点和尾指针",
+            "category": "infrastructure"
+        },
+        "linklistxp": {
+            "title": "2.3.1 增强的单链表 封装了头尾指针",
+            "category": "infrastructure"
+        },
+        "merge": {
+            "title": "链表合并 将一个链表合并到另一个链表中", 
+            "category": "application",
+            "dependency": {
+                "seqlist": [
+                    "list/seqlist"
+                ]
+            },
+            "executable": "merge"
+        },
+        "polyadd": {
+            "title": "多项式相加 用链表表示的多项式相加",
+            "category": "application",
+            "dependency": "standalone",
+            "elemtype": [],
+            "executable": "padd"
+        }
+    }
+}

@@ -1,0 +1,165 @@
+{
+    "home": "07-graph",
+    "chapter": "第七章 图",
+    "defaulttype": [],
+    "defaultexec": "graph",
+    "section": {
+        "main": {
+            "title": "测试图的主程序",
+            "category": "infrastructure|hidden"
+        },
+        "share": {
+            "title": "一些共享的源代码",
+            "category": "infrastructure|hidden"
+        },
+        "adjmatrix": {
+            "title": "7.2.1 邻接矩阵表示法",
+            "category": "infrastructure"
+        },
+        "adjlist": {
+            "title": "7.2.2 邻接表表示法",
+            "category": "infrastructure"
+        },
+        "orthlist": {
+            "title": "7.2.3 十字链表",
+            "category": "infrastructure"
+        },
+        "depthfirst": {
+            "title": "7.3.1 图的遍历--深度优先",
+            "category": "application",
+            "dependency": {
+                "adjmatrix": [
+                    "graph/adjmatrix",
+                    "graph/share",
+                    "stack/seqstack"
+                ],
+                "adjlist": [
+                    "graph/adjlist",
+                    "graph/share",
+                    "stack/linkstack"
+                ]
+            },
+            "elemtype": [
+                "typedef int StackElementType;"
+            ],
+            "executable": "depthfirst"
+        },
+        "breadthfirst": {
+            "title": "7.3.2 图的遍历--广度优先",
+            "category": "application",
+            "dependency": {
+                "adjmatrix": [
+                    "graph/adjmatrix",
+                    "graph/share",
+                    "queue/linkqueue"
+                ],
+                "adjlist": [
+                    "graph/adjlist",
+                    "graph/share",
+                    "queue/linkqueue"
+                ]
+            },
+            "elemtype": [
+                "typedef int QueueElementType;"
+            ],
+            "executable": "breadthfirst"
+        },
+        "onepath": {
+            "title": "7.4.1.2 图的连通性问题--两个顶点间的简单路径",
+            "category": "application",
+            "dependency": {
+                "adjmatrix": [
+                    "graph/adjmatrix",
+                    "graph/share"
+                ],
+                "adjlist": [
+                    "graph/adjlist",
+                    "graph/share"
+                ]
+            },
+            "executable": "onepath"
+        },
+        "prim": {
+            "title": "7.4.1.3 图的连通性问题--最小生成树--Prim算法",
+            "category": "application",
+            "dependency": {
+                "default": [
+                    "graph/adjmatrix",
+                    "graph/share"
+                ]
+            },
+            "executable": "prim"
+        },
+        "kruskal": {
+            "title": "7.4.1.3 图的连通性问题--最小生成树--Kruskal算法",
+            "category": "application",
+            "dependency": {
+                "default": [
+                    "graph/adjmatrix",
+                    "graph/share"
+                ]
+            },
+            "executable": "kruskal"
+        },
+        "toposort": {
+            "title": "7.4.2.1 有向无环图的应用--拓扑排序",
+            "category": "application",
+            "dependency": {
+                "default": [
+                    "graph/adjlist",
+                    "graph/share",
+                    "stack/linkstack"
+                ]
+            },
+            "elemtype": [
+                "typedef int StackElementType;"
+            ],
+            "executable": "toposort"
+        },
+        "criticalpath": {
+            "title": "7.4.2.2 有向无环图的应用--关键路径",
+            "category": "application",
+            "dependency": {
+                "default": [
+                    "graph/adjlist",
+                    "graph/share",
+                    "stack/linkstack"
+                ]
+            },
+            "elemtype": [
+                "typedef int StackElementType;"
+            ],
+            "executable": "cpath"
+        },
+        "shortestpath": {
+            "title": "7.4.3 最短路径问题",
+            "category": "application",
+            "dependency": {
+                "default": [
+                    "graph/adjmatrix",
+                    "graph/share",
+                    "list/seqlist"
+                ]
+            },
+            "elemtype": [
+                "typedef int ElemType;"
+            ],
+            "executable": "spath"
+        },
+        "hamilton": {
+            "title": "Hanmilton连通性问题",
+            "category": "application",
+            "dependency": {
+                "adjmatrix": [
+                    "graph/adjmatrix",
+                    "graph/share"
+                ],
+                "adjlist": [
+                    "graph/adjlist",
+                    "graph/share"
+                ]
+            },
+            "executable": "hamilton"
+        }
+    }
+}

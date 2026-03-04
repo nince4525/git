@@ -1,0 +1,7 @@
+6
+AB.DF..G..C.E.H..   $   tree-figure1.txt    $
+AB.C..DE..FG.H..I.. $   tree-figure2.txt    tree-map2.txt
+ABDHL..M...E.I..CF.JN...G.K.O.. $   tree-figure3.txt    $
+AB.C.D..EF..GH.IJ.... $ tree-figure4.txt    $
+ABCDEFGHI   BCAEDGHFI   tree-figure2.txt    $
+ABDHLMEICFJNGKO LHMDBEIAFNJCGKO tree-figure3.txt    $

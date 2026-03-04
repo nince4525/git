@@ -1,0 +1,108 @@
+{
+    "chapter": "第六章 树与二叉树",
+    "defaultexec": "bitree",
+    "defaulttype": [],
+    "home": "06-tree",
+    "section": {
+        "bitree": {
+            "category": "infrastructure",
+            "title": "二叉树",
+            "dependency": {
+                "recur": [
+                    "tree/bitree-traverse-recur"
+                ],
+                "stack": [
+                    "tree/bitree-traverse-stack"
+                ]
+            }
+        },
+        "bitree-traverse-recur": {
+            "category": "infrastructure|hidden",
+            "title": "二叉树的遍历"
+        },
+        "bitree-traverse-stack": {
+            "category": "infrastructure|hidden",
+            "dependency": {
+                "default": [
+                    "stack/seqstack"
+                ]
+            },
+            "elemtype": [
+                "#include \"bitree.h\"",
+                "typedef BiTree StackElementType;"
+            ],
+            "title": "二叉树的遍历：基于栈的递归消除"
+        },
+        "cstree": {
+            "category": "application",
+            "dependency": {
+                "default": [
+                    "tree/cstree-infrastructure",
+                    "tree/bitree"
+                ]
+            },
+            "executable": "cstree",
+            "title": "孩子兄弟表示法"
+        },
+        "cstree-infrastructure": {
+            "category": "infrastructure|hidden",
+            "title": "cstree的实现",
+            "executable": "cstree"
+        },
+        "forest": {
+            "category": "application",
+            "dependency": {
+                "default": [
+                    "tree/cstree-infrastructure"
+                ]
+            },
+            "executable": "forest",
+            "title": "森林"
+        },
+        "huffman": {
+            "category": "application",
+            "dependency": "standalone",
+            "executable": "huffman",
+            "title": "哈夫曼树及其应用"
+        },
+        "layer": {
+            "category": "application",
+            "dependency": {
+                "default": [
+                    "tree/bitree",
+                    "queue/cseqqueue"
+                ]
+            },
+            "elemtype": [
+                "#include \"bitree.h\"",
+                "typedef BiTree QueueElementType;"
+            ],
+            "executable": "layer",
+            "title": "二叉树遍历算法的应用：按树的层次遍历"
+        },
+        "main": {
+            "category": "infrastructure|hidden",
+            "title": "测试bitree的主程序"
+        },
+        "treeapp1": {
+            "category": "application",
+            "dependency": {
+                "default": [
+                    "tree/bitree"
+                ]
+            },
+            "executable": "app1",
+            "title": "二叉树遍历算法的应用：叶节点、求树的高度、打印二叉树等"
+        },
+        "treeapp2": {
+            "category": "application",
+            "dependency": {
+                "default": [
+                    "tree/bitree"
+                ]
+            },
+            "executable": "app2",
+            "title": "二叉树遍历算法的应用：查找节点、判断两棵树是否同构、查找节点的兄弟节点等"
+        }
+    }
+}

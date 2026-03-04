@@ -1,0 +1,20 @@
+#!/bin/bash
+
+if [ ! `pwd | grep 'DS'` ]; then
+    red="\e[31m"
+    green="\e[32m"
+    blue="\e[36m"
+    amber="\e[33m"
+    ende="\e[0m"
+
+    echo -e "${red}===错误===${ende}"
+    echo -e "${red}没有在正确的目录中运行bjmake${ende}"
+    echo -e "请用如下命令进入${green}C版本${ende}目录："
+    echo -e "    cd ${blue}\$DSHOME${ende}"
+    echo -e "或者进入${green}C++版本${ende}目录："
+    echo -e "    cd ${blue}\$DSHOMECXX${ende}"
+    echo -e "${amber}请查阅bjmake手册看看如何设置 ${blue}DSHOME${ende} ${blue}DSHOMECXX${ende} ${amber}这两个环境变量${ende}"
+    exit
+fi
+
+python3 ".bjmake/bjmake.py" $*

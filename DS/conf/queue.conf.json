@@ -1,0 +1,22 @@
+{
+    "home": "03-queue",
+    "chapter": "第三章 限定性线性表-栈与队列",
+    "defaulttype": [
+        "typedef int QueueElementType;"
+    ],
+    "defaultexec": "queue",
+    "section": {
+        "main": {
+            "title": "主程序",
+            "category": "infrastructure|hidden"
+        },
+        "linkqueue": {
+            "title": "3.2.2.1 链队列",
+            "category": "infrastructure"
+        },
+        "cseqqueue": {
+            "title": "3.2.2.2 循环顺序队列",
+            "category": "infrastructure"
+        }
+    }
+}

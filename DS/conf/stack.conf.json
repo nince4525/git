@@ -1,0 +1,83 @@
+{
+    "home": "03-stack",
+    "chapter": "第三章 限定性线性表-栈与队列",
+    "defaulttype": [
+        "typedef int StackElementType;"
+    ],
+    "defaultexec": "stack",
+    "section": {
+        "main": {
+            "title": "主程序",
+            "category": "infrastructure|hidden"
+        },
+        "seqstack": {
+            "title": "3.1.2.1 顺序栈",
+            "category": "infrastructure"
+        },
+        "linkstack": {
+            "title": "3.1.2.2 链栈",
+            "category": "infrastructure"
+        },
+        "linkstackreuse": {
+            "title": "3.1.2.2 复用链表作为基础类型的链栈",
+            "category": "infrastructure",
+            "dependency": {
+                "linklist": [
+                    "list/linklist"
+                ]
+            },
+            "elemtype": [
+                "typedef int ElemType;",
+                "typedef ElemType StackElementType;"
+            ]
+        },
+        "bracket": {
+            "title": "3.1.3.1 栈的应用-括号匹配",
+            "category": "application",
+            "dependency": {
+                "seqstack": [
+                    "stack/seqstack"
+                ]
+            },
+            "elemtype": [
+                "typedef char StackElementType;"
+            ],
+            "executable": "bracket"
+        },
+        "expreval": {
+            "title": "3.1.3.1 栈的应用-表达式求值",
+            "category": "application",
+            "dependency": {
+                "seqstack": [
+                    "stack/seqstack"
+                ],
+                "linkstack": [
+                    "stack/linkstack"
+                ]
+            },
+            "executable": "expreval"
+        },
+        "fill": {
+            "title": "示例程序：边界填充-递归",
+            "category": "application",
+            "dependency": "standalone",
+            "elemtype": [],
+            "executable": "fill"
+        },
+        "fillreuse": {
+            "title": "栈的应用：边界填充 复用了链栈",
+            "category": "application",
+            "dependency": {
+                "linklist": [
+                    "list/linklist",
+                    "stack/linkstackreuse"
+                ]
+            },
+            "elemtype": [
+                "typedef struct { int x, y; } Coord, ElemType;",
+                "typedef ElemType StackElementType;"
+            ],
+            "executable": "fill"
+        }
+    }
+}

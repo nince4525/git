@@ -1,0 +1,29 @@
+{
+    "home": "05-array",
+    "chapter": "第五章 数组与广义表",
+    "defaulttype": [],
+    "defaultexec": "matrix",
+    "section": {
+        "main": {
+            "title": "主程序",
+            "category": "infrastructure|hidden"
+        },
+        "tsmatrix": {
+            "title": "5.3.2.1 稀疏矩阵（三元组）",
+            "category": "application",
+            "dependency": "standalone"
+        },
+        "crosslist": {
+            "title": "5.3.2.1 稀疏矩阵（十字链表）",
+            "category": "application",
+            "dependency": "standalone",
+            "executable": "crlist"
+        },
+        "add": {
+            "title": "5.3.2.1 稀疏矩阵相加",
+            "category": "application",
+            "dependency": "standalone",
+            "executable": "madd"
+        }
+    }
+}

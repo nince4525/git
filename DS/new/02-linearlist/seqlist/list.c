@@ -10,7 +10,7 @@ void InitList(LListPtr *L) {
 
 bool InsList(LListPtr L, int i, ElemType e) {
     //当插入位置不合理时
-    if (/*TODO*/)
+    if (i < 1 || i > L->last + 2)
         return false;
 
     //TODO
